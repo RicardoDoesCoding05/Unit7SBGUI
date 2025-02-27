@@ -2,12 +2,14 @@ import java.util.ArrayList;
 import java.io.*;
 import java.util.Scanner;
 import java.util.Comparator;
+import javax.swing.JButton;
+
 
 public class Main {
     private ArrayList<Game> superBowls;
     public Main() throws Exception {
         superBowls = new ArrayList<>();
-        File file = new File("src/main/java/SuperBowlData.txt");
+        File file = new File(https:drive.google.com/file/d/1NA0s-sVOzUwMutIgx64x0s-PCde-u_4Y/view)
         Scanner sc = new Scanner(file);
 
         while (sc.hasNextLine()) {
@@ -46,5 +48,6 @@ public class Main {
     }
     public void sortByPointDifferential() {
         superBowls.sort((game1, game2) -> Integer.compare(game2.getPointDifferential(), game1.getPointDifferential()));
+    
     }
 }
