@@ -13,8 +13,6 @@ public class Game {
         this.losingTeam = losingTeam;
         this.score = score;
     }
-
-    // Getters and Setters
     public String getNumeral() {
         return numeral;
     }
